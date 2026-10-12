@@ -1,9 +1,16 @@
+<!--
+  NOTE (Aditya ke liye, GitHub pe dikhega nahi):
+  "How I Build" aur project highlights me jo practices likhi hain (tests, CI, Swagger docs, etc.),
+  sirf wahi rakhna jo repo me sach me hai. Recruiter repo khol ke check karte hain —
+  jo claim repo me match kare wahi trust banata hai.
+-->
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:8B5CF6&height=200&section=header&text=Aditya%20Tiwari&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20MERN%20%26%20Python%20%7C%20AI%20Enthusiast&descAlignY=55&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:8B5CF6&height=200&section=header&text=Aditya%20Tiwari&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20MERN%20%26%20Python%20%7C%20Applied%20AI&descAlignY=55&descSize=18" width="100%"/>
 
 <a href="https://www.linkedin.com/in/aditya-tiwari-5a1977249" target="_blank">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Building+full-stack+apps+that+actually+work;MERN+%2B+Python+%2B+AI+%2F+NLP;Turning+ideas+into+shipped+products;Open+to+Opportunities+%F0%9F%9A%80&font=Fira+Code&center=true&width=600&height=45&color=8B5CF6&vCenter=true&size=22" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?lines=I+build+full-stack+apps+end-to-end;Clean+APIs+%E2%80%A2+Secure+auth+%E2%80%A2+Dockerized+deploys;MERN+%2B+FastAPI+%2B+NLP;Open+to+SDE+%2F+Full-Stack+roles+%F0%9F%9A%80&font=Fira+Code&center=true&width=620&height=45&color=8B5CF6&vCenter=true&size=22" alt="Typing SVG" />
 </a>
 
 <p>
@@ -13,46 +20,171 @@
 </p>
 
 <p>
-  <a href="mailto:adityatiwari2044@gmail.com">
-    <img src="https://img.shields.io/badge/Email-adityatiwari2044%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/aditya-tiwari-5a1977249" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Aditya%20Tiwari-0077B5?style=flat-square&logo=linkedin&logoColor=white" />
-  </a>
+  <a href="mailto:adityatiwari2044@gmail.com"><img src="https://img.shields.io/badge/Email-adityatiwari2044%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/aditya-tiwari-5a1977249" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Aditya%20Tiwari-0077B5?style=flat-square&logo=linkedin&logoColor=white" /></a>
 </p>
 
 </div>
 
-<br>
+---
 
-## 🧭 About Me
+## 👋 About Me
 
-```yaml
-name: Aditya Tiwari
-role: Full-Stack Developer
-stack: [React, Node.js, Express, FastAPI, MongoDB, Python]
-currently_building: AI-powered tools & production-grade full-stack systems
-learning: System Design, Advanced NLP, Cloud Deployment
-collaborate_on: Open-source & beginner-friendly projects
-philosophy: "Consistency beats speed — small progress, every single day."
-reach_me: aditya-tiwari-5a1977249 (LinkedIn)
+I'm a full-stack developer who likes taking an idea all the way from **schema design → API → UI → deployment**. Most of my work sits at the intersection of **MERN / FastAPI backends** and **applied NLP**, and I care as much about *how* a project is built as *what* it does — readable code, predictable APIs, and a setup anyone can run in one command.
+
+- 🔭 **Building:** AI-powered tools and production-style full-stack systems
+- 🌱 **Leveling up in:** System Design · Advanced NLP · Cloud Deployment
+- 🤝 **Open to:** SDE / Full-Stack internships & roles, and open-source collaboration
+- 💬 **Ask me about:** REST API design, JWT auth flows, Dockerizing MERN/FastAPI apps
+
+---
+
+## 🧪 How I Build
+
+> Shipping is the floor, not the ceiling. These are the habits I follow across my projects.
+
+| Practice | What it looks like in my repos |
+|---|---|
+| 🏗️ **Clean architecture** | Separate routes / controllers / services / models — business logic never lives in route handlers |
+| 🔐 **Security first** | JWT auth with protected routes, hashed passwords, input validation, secrets in `.env` (never committed) |
+| 🐳 **Reproducible setup** | Docker + `docker-compose` so the whole stack runs with one command |
+| 📄 **Documentation** | Every repo has a README with features, architecture, setup steps and env variables; FastAPI services expose auto-generated Swagger docs |
+| 🌿 **Git discipline** | Small, focused commits with meaningful messages; feature branches merged via PRs |
+| ✅ **Testing** | API testing with Postman collections; unit tests for core logic (pytest / Jest) |
+| 🚀 **Deployment** | Live demos on Vercel; environment-based config for dev vs prod |
+
+---
+
+## 🌟 Featured Project — AI Resume Analyzer
+
+<table>
+<tr>
+<td width="55%" valign="top">
+
+### 🤖 [AI Resume Analyzer](https://github.com/Aditya-9753/BTech-AI-Resume-Analyzer-AdityaTiwari)
+
+A production-style resume evaluator that tells candidates **how well their resume matches a job** — and how to fix it.
+
+**What it does**
+- Extracts skills from resumes using **spaCy NLP**
+- Scores resume ↔ job-description fit via **semantic similarity**
+- **Simulates ATS screening** to flag formatting & keyword gaps
+- Generates actionable feedback with **Google Gemini**
+- **Admin analytics dashboard** for usage insights
+
+**Engineering highlights**
+- FastAPI backend with typed request/response models
+- JWT-based auth with role separation (user / admin)
+- MongoDB for flexible resume + analysis storage
+- Fully **Dockerized** — frontend, backend & DB in one compose file
+
+<img src="https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi&logoColor=white"/> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/> <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white"/> <img src="https://img.shields.io/badge/spaCy-09A3D5?style=flat-square&logo=spacy&logoColor=white"/> <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+
+</td>
+<td width="45%" valign="top">
+
+**Architecture**
+
+```mermaid
+flowchart TD
+    U[React Client] -->|JWT| A[FastAPI Gateway]
+    A --> P[Resume Parser]
+    P --> N[spaCy Skill Extraction]
+    N --> S[Semantic Match + ATS Score]
+    S --> G[Gemini Feedback]
+    A <--> D[(MongoDB)]
+    A --> R[Admin Analytics]
 ```
 
-<br>
+</td>
+</tr>
+</table>
 
-## 🛠️ Tech Arsenal
+---
 
-<table align="center" border="0">
+## 🚀 More Projects
+
+<table>
 <tr>
-<td align="center" width="140"><b>Frontend</b></td>
+<td width="50%" valign="top">
+
+### 🔗 [LinkZap](https://github.com/Aditya-9753/Linnkzap) · [▶ Live](https://linnkzap-yd76.vercel.app/)
+Secure **MERN URL shortener** with auto QR-code generation and a real-time analytics dashboard for clicks & usage.
+
+**Shows:** auth-protected CRUD, analytics data modeling, Dockerized MERN stack, live deployment
+
+<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white"/> <img src="https://img.shields.io/badge/Express-404D59?style=flat-square&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+
+</td>
+<td width="50%" valign="top">
+
+### 🏎️ [F1 Race Replay](https://github.com/Aditya-9753/F1-Race) · [▶ Live](https://f1-race-kappa.vercel.app)
+Replays **real F1 telemetry** — live leaderboard, tyre data, per-driver speed / gear / DRS, with pause, rewind and speed controls.
+
+**Shows:** working with large real-world datasets, time-series processing, interactive data visualization
+
+<img src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54"/> <img src="https://img.shields.io/badge/FastF1-E10600?style=flat-square"/> <img src="https://img.shields.io/badge/Data%20Viz-orange?style=flat-square"/>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🗣️ [Interview Platform](https://github.com/Aditya-9753/Interview-Platform-)
+Backend that models **real technical-interview workflows** — scheduling, rounds and candidate state — through clean REST APIs.
+
+**Shows:** RESTful resource design, workflow/state modeling, structured error handling
+
+<img src="https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/Express-404D59?style=flat-square&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/REST%20API-blue?style=flat-square"/>
+
+</td>
+<td width="50%" valign="top">
+
+### 🔐 [CSMP — Secure Messaging Protocol](https://github.com/Aditya-9753/CSMP-)
+A custom **secure messaging protocol** covering session management and real-time communication.
+
+**Shows:** protocol design, session lifecycle handling, thinking about security and scale at the backend level
+
+<img src="https://img.shields.io/badge/Security-critical?style=flat-square"/> <img src="https://img.shields.io/badge/Real--time-yellow?style=flat-square"/> <img src="https://img.shields.io/badge/Backend-informational?style=flat-square"/>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 [AI Research Assistant](https://github.com/Aditya-9753/Research-Assistant)
+Parses natural-language research queries and returns context-aware, structured responses.
+
+**Shows:** NLP query handling, LLM integration, automation pipelines
+
+<img src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54"/> <img src="https://img.shields.io/badge/AI-purple?style=flat-square"/>
+
+</td>
+<td width="50%" valign="top">
+
+### 📚 More on my profile
+- **[LMS](https://github.com/Aditya-9753/LMS)** — MERN Learning Management System with courses & role-based access
+- **[camonk-blog-app](https://github.com/Aditya-9753/camonk-blog-app)** — React + Vite blog platform
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ Tech Stack
+
+<table align="center">
+<tr>
+<td align="center" width="130"><b>Frontend</b></td>
 <td>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </td>
 </tr>
 <tr>
@@ -72,136 +204,52 @@ reach_me: aditya-tiwari-5a1977249 (LinkedIn)
 </td>
 </tr>
 <tr>
-<td align="center"><b>Tools & DevOps</b></td>
-<td>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-</td>
-</tr>
-<tr>
 <td align="center"><b>AI / ML</b></td>
 <td>
   <img src="https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge&logo=spacy&logoColor=white" />
-  <img src="https://img.shields.io/badge/NLP-8B5CF6?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" />
+  <img src="https://img.shields.io/badge/NLP-8B5CF6?style=for-the-badge" />
+</td>
+</tr>
+<tr>
+<td align="center"><b>DevOps & Tools</b></td>
+<td>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
 </td>
 </tr>
 </table>
 
-<br>
+---
 
-## 🌟 Flagship Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 [AI Resume Analyzer](https://github.com/Aditya-9753/BTech-AI-Resume-Analyzer-AdityaTiwari)
-Production-grade resume evaluator — NLP skill extraction, semantic similarity matching, ATS simulation, and Gemini-powered AI feedback. JWT auth + admin analytics dashboard + Docker.
-
-<img src="https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi&logoColor=white"/> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/> <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white"/> <img src="https://img.shields.io/badge/NLP-blueviolet?style=flat-square"/>
-
-</td>
-<td width="50%" valign="top">
-
-### 🔗 [LinkZap](https://github.com/Aditya-9753/Linnkzap)
-Secure MERN URL shortener with auto QR-code generation and a real-time analytics dashboard tracking clicks & usage. Fully Dockerized.
-
-**[▶ Live Demo](https://linnkzap-yd76.vercel.app/)**
-
-<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white"/> <img src="https://img.shields.io/badge/Express-404D59?style=flat-square&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🏎️ [F1 Race Replay](https://github.com/Aditya-9753/F1-Race)
-Python app that replays real F1 telemetry — live leaderboard, tyre data, per-driver speed/gear/DRS, full playback controls (pause/rewind/speed).
-
-**[▶ Live Demo](https://f1-race-kappa.vercel.app)**
-
-<img src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54"/> <img src="https://img.shields.io/badge/FastF1-E10600?style=flat-square"/> <img src="https://img.shields.io/badge/Data%20Viz-orange?style=flat-square"/>
-
-</td>
-<td width="50%" valign="top">
-
-### 🗣️ [Interview Platform](https://github.com/Aditya-9753/Interview-Platform-)
-Backend-driven interview platform modeling real technical-interview workflows with clean, well-structured REST APIs.
-
-<img src="https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/Express-404D59?style=flat-square&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/REST%20API-blue?style=flat-square"/>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🧠 [AI Research Assistant](https://github.com/Aditya-9753/Research-Assistant)
-Python-based assistant that parses natural-language queries and generates meaningful, context-aware responses.
-
-<img src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54"/> <img src="https://img.shields.io/badge/AI-purple?style=flat-square"/> <img src="https://img.shields.io/badge/Automation-teal?style=flat-square"/>
-
-</td>
-<td width="50%" valign="top">
-
-### 🔐 [CSMP — Secure Messaging Protocol](https://github.com/Aditya-9753/CSMP-)
-Custom secure messaging protocol showcasing session management, real-time communication, and scalable backend architecture.
-
-<img src="https://img.shields.io/badge/Security-critical?style=flat-square"/> <img src="https://img.shields.io/badge/Real--time-yellow?style=flat-square"/> <img src="https://img.shields.io/badge/Backend%20Architecture-informational?style=flat-square"/>
-
-</td>
-</tr>
-</table>
-
-<p align="center">
-Also on my profile: <a href="https://github.com/Aditya-9753/LMS"><b>LMS</b></a> (MERN Learning Management System) · <a href="https://github.com/Aditya-9753/camonk-blog-app"><b>camonk-blog-app</b></a> (React + Vite blog platform)
-</p>
-
-<br>
-
-## 📊 GitHub Analytics
+## 📊 GitHub Activity
 
 <div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Aditya-9753&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aditya-9753&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Aditya-9753&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117" />
+  <img height="165" src="https://streak-stats.demolab.com/?user=Aditya-9753&theme=tokyonight&hide_border=true&background=0D1117" />
 </div>
 
 <div align="center">
-<img src="https://streak-stats.demolab.com/?user=Aditya-9753&theme=tokyonight&hide_border=true&background=0D1117" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Aditya-9753&theme=tokyo-night&hide_border=true&bg_color=0D1117" width="95%" />
 </div>
 
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Aditya-9753&theme=tokyo-night&hide_border=true&bg_color=0D1117" width="95%" />
-</div>
-
-<br>
-
-## 🏆 Trophy Case
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=Aditya-9753&theme=tokyonight&no-frame=true&margin-w=10&row=1&column=7" />
-</div>
-
-<br>
+---
 
 ## 📫 Let's Connect
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/aditya-tiwari-5a1977249" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="mailto:adityatiwari2044@gmail.com">
-  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
+I'm actively looking for **SDE / Full-Stack opportunities**. If you're building something interesting, I'd love to talk.
+
+<a href="https://www.linkedin.com/in/aditya-tiwari-5a1977249" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:adityatiwari2044@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 <br><br>
 
-<i>⭐ Consistency beats speed — one commit at a time.</i>
+<i>⭐ Consistency beats speed — one commit at a time.</i> 
 
 </div>
 
